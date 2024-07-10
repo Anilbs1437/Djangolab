@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit and Event</title>
+    <style>
+        h1{
+            color: blue;
+            background-color: aqua;
+        }
+        li{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fruits</h1>
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ fruit }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Selected Students for the Event</h1>
+    <ol>
+        {% for student in students %}
+            <li>{{ student }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
